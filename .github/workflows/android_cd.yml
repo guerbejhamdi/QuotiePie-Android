@@ -45,16 +45,7 @@ jobs:
       - name: Build Release AAB
         id: buildReleaseAab
         run: ./gradlew bundleRelease --stacktrace
-
-      - name: Generate Signed AAB
-        id: sign
-        uses: r0adkll/sign-android-release@v1
-        with:
-          releaseDirectory: app/build/outputs/bundle/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: ${{ secrets.ALIAS }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+      
 
       - name: Upload Release Build
         uses: actions/upload-artifact@v3
