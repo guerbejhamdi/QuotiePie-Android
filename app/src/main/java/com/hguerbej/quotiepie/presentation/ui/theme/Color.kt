@@ -1,4 +1,4 @@
-package com.hguerbej.quotiepie.presentation.theme
+package com.hguerbej.quotiepie.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.hguerbej.domain"
+    namespace = "com.hguerbej.common"
     compileSdk = 34
 
     defaultConfig {
@@ -38,8 +38,6 @@ dependencies {
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.koin)
-    implementation(project(":common"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
