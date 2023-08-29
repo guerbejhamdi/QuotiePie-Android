@@ -1,4 +1,4 @@
-package com.hguerbej.quotiepie.presentation.theme
+package com.hguerbej.quotiepie.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
