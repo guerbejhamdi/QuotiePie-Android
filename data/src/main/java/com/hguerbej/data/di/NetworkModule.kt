@@ -1,6 +1,7 @@
 package com.hguerbej.data.di
 
 import com.hguerbej.data.api.QuoteApi
+import com.hguerbej.data.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
@@ -10,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 val networkModule = module {
     single { createOkHttpClient() }
-    single { createRetrofit(get(), "https://api.quotable.io/") }
+    single { createRetrofit(get(), BuildConfig.BASE_URL) }
     single { createQuoteApi(get()) }
 }
 
