@@ -8,7 +8,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.hguerbej.quotiepie.navigation.AppNavGraph
-import com.hguerbej.quotiepie.presentation.random_quote.RandomQuoteScreen
 import com.hguerbej.quotiepie.presentation.ui.theme.QuotiePieTheme
 
 class MainActivity : ComponentActivity() {
