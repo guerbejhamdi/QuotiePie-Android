@@ -3,7 +3,11 @@ package com.hguerbej.quotiepie
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.hguerbej.quotiepie.presentation.random_quote.RandomQuoteScreen
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.ui.Modifier
+import com.hguerbej.quotiepie.navigation.AppNavGraph
 import com.hguerbej.quotiepie.presentation.ui.theme.QuotiePieTheme
 
 class MainActivity : ComponentActivity() {
@@ -12,7 +16,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuotiePieTheme {
                 // A surface container using the 'background' color from the theme
-                RandomQuoteScreen()
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    AppNavGraph()
+                }
             }
         }
     }

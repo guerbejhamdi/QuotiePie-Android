@@ -8,10 +8,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import org.koin.androidx.compose.koinViewModel
 
 @Composable
-fun RandomQuoteScreen(viewModel: RandomQuoteViewModel = koinViewModel()) {
+fun RandomQuoteScreen(viewModel: RandomQuoteViewModel) {
     //TODO : refactor this
     //get the quote from the viewModel
     val quote = viewModel.quote.value
