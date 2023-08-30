@@ -69,6 +69,7 @@ dependencies {
     implementation(libs.koin)
     implementation(libs.koin.compose)
     implementation(libs.koin.core)
+    implementation(libs.timber)
     implementation(project(":domain"))
     implementation(project(":data"))
     implementation(project(":common"))
