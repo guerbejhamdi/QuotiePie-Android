@@ -5,7 +5,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hguerbej.common.Resource
-import com.hguerbej.domain.models.Quote
 import com.hguerbej.domain.usecase.GetRandomQuoteUseCase
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
