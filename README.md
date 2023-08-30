@@ -44,7 +44,7 @@ App is build using Clean Architecture design pattern. Which consist of three mod
 * [**domain**](https://github.com/guerbejhamdi/QuotiePie-Android/tree/master/domain) - In this module contains core bussiness logic and it doesn't contains any platform related api usage and should only use java/kotlin language apis.
 * [**data**](https://github.com/guerbejhamdi/QuotiePie-Android/tree/master/data) - This module is mainly responsible for accessing data from remote or local source which is being called from domain module only.
 
-![Clean-Architecture-in-Android](https://github.com/swapnil-musale/JetJoke/assets/15209914/526ea05d-d3d1-49da-b034-74628871a774)
+![Clean-Architecture-in-Android](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vcnYWWn_zhNk6I30meBaPg.png)
 
 ## 🧪 Testing (ToDo):
 * Coming soon
