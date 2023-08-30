@@ -1,6 +1,5 @@
 package com.hguerbej.quotiepie.presentation.random_quote
 
-import android.util.Log
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -10,6 +9,7 @@ import com.hguerbej.domain.usecase.GetRandomQuoteUseCase
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
+import timber.log.Timber
 
 class RandomQuoteViewModel(private val getRandomQuoteUseCase: GetRandomQuoteUseCase) : ViewModel(){
 
@@ -20,24 +20,24 @@ class RandomQuoteViewModel(private val getRandomQuoteUseCase: GetRandomQuoteUseC
 
 
     init {
-        Log.d("RandomQuoteViewModel", "init")
+        Timber.d("init")
         getRandomQuote()
     }
 
-    fun getRandomQuote() {
+    private fun getRandomQuote() {
         viewModelScope.launch {
             getRandomQuoteUseCase().onEach {
                 result ->
                 when(result) {
                     is Resource.Loading -> {
-                        Log.d("RandomQuoteViewModel", "Loading")
+                        Timber.d("Loading")
                     }
                     is Resource.Success -> {
-                        Log.d("RandomQuoteViewModel", "Success")
                         _quote.value = result.data
+                        Timber.d("Success")
                     }
                     is Resource.Error -> {
-                        Log.d("RandomQuoteViewModel", "Error")
+                        Timber.d("Error")
                     }
                 }
             }.launchIn(viewModelScope)
