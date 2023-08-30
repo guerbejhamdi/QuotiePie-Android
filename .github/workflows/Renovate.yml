@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "55 13 * * *"
+    - cron: "0 14 * * *"
 name: Daily Jobs
 jobs:
   renovate:
@@ -12,6 +12,6 @@ jobs:
       - name: Run Renovate
         uses: docker://renovate/renovate:19.133-slim
         env:
-          RENOVATE_REPOSITORIES: <guerbejhamdi/QuotiePie-Android>
+          RENOVATE_REPOSITORIES: guerbejhamdi/QuotiePie-Android
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
           RENOVATE_AUTOMERGE: true # optional, see below
