@@ -1,4 +1,10 @@
 
+<br/>
+<p align="center">
+<img width="200" alt="Capture d’écran 2023-08-31 à 4 16 47 PM" src="https://github.com/guerbejhamdi/QuotiePie-Android/assets/60189133/27f8d19b-6913-4e62-860e-55e7e4d0309c">
+</p>
+
+
   <h2 align="center">QuotiePie - A slice of inspiration</h2>
 
 
