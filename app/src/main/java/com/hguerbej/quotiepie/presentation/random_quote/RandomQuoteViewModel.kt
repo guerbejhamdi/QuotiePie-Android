@@ -46,4 +46,8 @@ class RandomQuoteViewModel(private val getRandomQuoteUseCase: GetRandomQuoteUseC
         }
     }
 
+    fun onRefreshQuote() {
+        getRandomQuote()
+    }
+
 }
