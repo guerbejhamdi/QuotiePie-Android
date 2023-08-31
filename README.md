@@ -46,6 +46,12 @@ App is build using Clean Architecture design pattern. Which consist of three mod
 
 ![Clean-Architecture-in-Android](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*vcnYWWn_zhNk6I30meBaPg.png)
 
+
+### Video
+https://github.com/guerbejhamdi/QuotiePie-Android/assets/60189133/b20d82fc-f1b1-4694-b1d0-695580395f4b
+
+
+
 ## 🧪 Testing (ToDo):
 * Coming soon
 
