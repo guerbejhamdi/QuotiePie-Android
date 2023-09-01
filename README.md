@@ -7,6 +7,13 @@
 
   <h2 align="center">QuotiePie - A slice of inspiration</h2>
 
+</p>
+<p align="center">
+<a href="https://github.com/guerbejhamdi/QuotiePie-Android/actions"><img alt="Android CI Pipeline" src="https://github.com/guerbejhamdi/QuotiePie-Android/actions/workflows/android_ci.yml/badge.svg?event=pull_request"/></a>
+<a href="https://github.com/guerbejhamdi/QuotiePie-Android/stargazers"><img alt="Github Repository starred" src="https://img.shields.io/github/stars/guerbejhamdi/QuotiePie-Android"/></a>
+<a href="https://opensource.org/licenses/Apache-2.0"><img alt="Apache License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
+</p>
+
 
 ## ℹ️ Project Info : 
 **QuotiePie** is an app that displays a random inspirational quote to help users start their day or stay motivated. It is built to demonstrate the use of Modern Android development (MAD) tools , based on MVVM Clean Architecture & Jetpack compose. App is mainly divided into 3 layers i.e ```data```, ```domain``` & ```app``` (presentation).
